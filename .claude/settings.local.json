@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npx @docusaurus/core build)",
+      "Bash(./node_modules/.bin/docusaurus build)",
+      "Bash(npm install --save-dev @docusaurus/module-type-aliases@3.1.0)",
+      "Bash(node -e \"const docusaurus = require\\(''@docusaurus/core''\\); console.log\\(''Docusaurus version:'', docusaurus.version\\);\")",
+      "Bash(grep -c '```' /mnt/e/Physical-AI-Humanoid-Robotics-Book/docs/docs/module-1/chapter-1-ros2-foundations.md)",
+      "Bash(grep -c '```' /mnt/e/Physical-AI-Humanoid-Robotics-Book/docs/docs/module-1/chapter-2-python-ai-control.md)",
+      "Bash(tee build_output.log)",
+      "Bash(npx @docusaurus/core serve)"
+    ]
+  }
+}

@@ -208,3 +208,10 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- Docusaurus v3.x, React, Node.js, npm/yarn package manager (001-ros2-module)
+- Static files (Markdown content, configuration files) (001-ros2-module)
+
+## Recent Changes
+- 001-ros2-module: Added Docusaurus v3.x, React, Node.js, npm/yarn package manager

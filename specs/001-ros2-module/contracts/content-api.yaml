@@ -1,0 +1,72 @@
+# Documentation Content API Contract
+
+## Purpose
+This contract defines the structure and format for documentation content in the Physical AI & Humanoid Robotics book. This will enable future integration with RAG (Retrieval-Augmented Generation) systems and other tools.
+
+## Content Format Contract
+
+### Chapter Document Structure
+```json
+{
+  "id": "string (unique identifier for the chapter)",
+  "moduleId": "string (reference to parent module)",
+  "title": "string (chapter title)",
+  "content": "string (Docusaurus-compatible Markdown content)",
+  "objectives": "array of strings (learning objectives)",
+  "prerequisites": "array of strings (required knowledge)",
+  "tags": "array of strings (relevant topics)",
+  "createdAt": "ISO 8601 date string",
+  "updatedAt": "ISO 8601 date string",
+  "version": "string (content version)"
+}
+```
+
+### Module Document Structure
+```json
+{
+  "id": "string (unique identifier for the module)",
+  "title": "string (module title)",
+  "description": "string (brief description)",
+  "chapters": "array of chapter IDs in order",
+  "order": "integer (position in book sequence)",
+  "createdAt": "ISO 8601 date string",
+  "updatedAt": "ISO 8601 date string",
+  "version": "string (content version)"
+}
+```
+
+## Content Delivery API
+
+### Get Chapter Content
+- **Endpoint**: `/api/chapters/{chapterId}`
+- **Method**: GET
+- **Response**: Chapter document structure as JSON
+- **Authentication**: None required (public documentation)
+
+### Get Module Content
+- **Endpoint**: `/api/modules/{moduleId}`
+- **Method**: GET
+- **Response**: Module document structure as JSON
+- **Authentication**: None required (public documentation)
+
+### Search Content
+- **Endpoint**: `/api/search`
+- **Method**: GET
+- **Parameters**:
+  - `query`: string (search term)
+  - `limit`: integer (max results, default 10)
+- **Response**: Array of content snippets with relevance scores
+- **Authentication**: None required (public documentation)
+
+## Content Validation Rules
+- All content must be in valid Docusaurus-compatible Markdown format
+- Frontmatter must include required fields (title, description)
+- Content must be technically accurate and verifiable
+- All code examples must be minimal and illustrative only
+- Content must assume Python knowledge but require no prior ROS experience
+
+## Versioning
+- Content follows semantic versioning (major.minor.patch)
+- Breaking changes to content structure increment major version
+- New content or non-breaking updates increment minor version
+- Corrections and typo fixes increment patch version

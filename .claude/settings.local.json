@@ -9,7 +9,18 @@
       "Bash(grep -c '```' /mnt/e/Physical-AI-Humanoid-Robotics-Book/docs/docs/module-1/chapter-1-ros2-foundations.md)",
       "Bash(grep -c '```' /mnt/e/Physical-AI-Humanoid-Robotics-Book/docs/docs/module-1/chapter-2-python-ai-control.md)",
       "Bash(tee build_output.log)",
-      "Bash(npx @docusaurus/core serve)"
+      "Bash(npx @docusaurus/core serve)",
+      "Bash(find . -name \"*.md\" -not -path \"./node_modules/*\" -not -path \"./.git/*\" -exec grep -L \"^[[:space:]]*$\" {})",
+      "Bash(find . -name \"*.md\" -not -path \"./node_modules/*\" -not -path \"./.git/*\" -exec grep -H -n \"\\\\`\\\\`\\\\`\" {} ;)",
+      "Bash(find . -name \"*.md\" -not -path \"./node_modules/*\" -not -path \"./.git/*\" -exec grep -H -n \"^#\" {})",
+      "Bash(curl -I http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(mkdir -p static/img)",
+      "Bash(pkill -f \"docusaurus\")",
+      "Bash(pkill -f \"node.*docusaurus\")",
+      "Bash(curl -s -o /tmp/docusaurus-logo.svg https://docusaurus.io/img/docusaurus.svg)",
+      "Bash(npx docusaurus start)",
+      "Bash(curl -s http://localhost:3000/img/logo.svg)"
     ]
   }
 }

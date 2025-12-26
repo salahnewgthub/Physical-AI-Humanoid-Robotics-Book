@@ -16,6 +16,16 @@ const sidebars = {
             'module-1/chapter-2-python-ai-control',
           ],
         },
+        {
+          type: 'category',
+          label: 'Module 2: The Digital Twin (Gazebo & Unity)',
+          items: [
+            'modules/digital-twin/index',
+            'modules/digital-twin/chapter-1-physics-simulation-gazebo',
+            'modules/digital-twin/chapter-2-high-fidelity-unity',
+            'modules/digital-twin/chapter-3-simulation-reality-transfer',
+          ],
+        },
       ],
     },
   ],

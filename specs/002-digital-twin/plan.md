@@ -1,24 +1,24 @@
-# Implementation Plan: Module 1 – The Robotic Nervous System (ROS 2)
+# Implementation Plan: Digital Twin Module (Gazebo & Unity)
 
-**Branch**: `001-ros2-module` | **Date**: 2025-12-20 | **Spec**: [link to spec](./spec.md)
-**Input**: Feature specification from `/specs/001-ros2-module/spec.md`
+**Branch**: `002-digital-twin` | **Date**: 2025-12-26 | **Spec**: [link to spec](./spec.md)
+**Input**: Feature specification from `/specs/002-digital-twin/spec.md`
 
 **Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
 
 ## Summary
 
-Create a Docusaurus-based documentation module that explains ROS 2 as the middleware connecting AI intelligence to humanoid robot bodies. The module will cover ROS 2 fundamentals (nodes, topics, services, actions) and how to bridge Python AI logic to robot controllers using rclpy, with minimal code examples focused on conceptual understanding.
+Create a Docusaurus-based documentation module that explains digital twins for humanoid robotics, focusing on Gazebo for physics simulation and Unity for high-fidelity visual environments. The module will cover simulation concepts, platform differences, and simulation-to-reality transfer, with minimal code examples focused on conceptual understanding.
 
 ## Technical Context
 
-**Language/Version**: Python 3.8+ for ROS 2 integration, JavaScript/TypeScript for Docusaurus
-**Primary Dependencies**: Docusaurus v3.x, Node.js v18+, npm/yarn, rclpy for ROS 2 Python client library
+**Language/Version**: JavaScript/TypeScript for Docusaurus, Python knowledge assumed for ROS 2 integration concepts
+**Primary Dependencies**: Docusaurus v3.x, Node.js v18+, npm/yarn
 **Storage**: N/A (documentation only, no persistent storage needed)
 **Testing**: N/A (documentation only, no automated testing required)
 **Target Platform**: Web-based documentation site, compatible with modern browsers
 **Project Type**: Documentation (single Docusaurus site)
 **Performance Goals**: Fast loading pages, responsive navigation, accessible content
-**Constraints**: Docusaurus-compatible Markdown format, minimal code examples, accessible to Python developers with no ROS experience
+**Constraints**: Docusaurus-compatible Markdown format, conceptual focus with minimal code, accessible to learners with ROS 2 basics knowledge
 
 ## Constitution Check
 
@@ -31,7 +31,7 @@ No violations detected. All design decisions align with project constitution pri
 ### Documentation (this feature)
 
 ```text
-specs/001-ros2-module/
+specs/002-digital-twin/
 ├── plan.md              # This file (/sp.plan command output)
 ├── research.md          # Phase 0 output (/sp.plan command)
 ├── data-model.md        # Phase 1 output (/sp.plan command)
@@ -45,9 +45,12 @@ specs/001-ros2-module/
 ```text
 docs/
 ├── docs/                 # Documentation content
-│   ├── module-1/         # Module 1 content
-│   │   ├── chapter-1-ros2-foundations.md
-│   │   └── chapter-2-python-ai-control.md
+│   ├── modules/          # Modules directory
+│   │   └── digital-twin/ # Digital Twin module content
+│   │       ├── index.md
+│   │       ├── chapter-1-physics-simulation-gazebo.md
+│   │       ├── chapter-2-high-fidelity-unity.md
+│   │       └── chapter-3-simulation-reality-transfer.md
 │   └── ...
 ├── src/                  # Custom components and pages
 ├── static/               # Static assets
@@ -56,12 +59,10 @@ docs/
 └── package.json          # Project dependencies
 ```
 
-**Structure Decision**: Single Docusaurus project structure chosen for documentation-focused deliverable. Content organized in module-specific directories for clear separation of topics.
+**Structure Decision**: Single Docusaurus project structure chosen for documentation-focused deliverable. Content organized in module-specific directories for clear separation of topics, with digital twin module in its own subdirectory under modules/.
 
 ## Complexity Tracking
 
 > **Fill ONLY if Constitution Check has violations that must be justified**
-
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| N/A | N/A | N/A |
+>
+> No violations detected. All design decisions align with project constitution principles.

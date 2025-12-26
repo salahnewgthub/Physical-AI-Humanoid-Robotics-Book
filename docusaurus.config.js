@@ -41,10 +41,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Physical-AI-Humanoid-Robotics-Book/Physical-AI-Humanoid-Robotics-Book/tree/main/',
+          // Edit URL removed to prevent 404 errors on "edit this page" links
         },
         blog: false, // Disable blog if not needed
         theme: {
@@ -73,7 +70,7 @@ const config = {
             label: 'Book',
           },
           {
-            href: 'https://github.com/Physical-AI-Humanoid-Robotics-Book/Physical-AI-Humanoid-Robotics-Book',
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,7 +106,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/Physical-AI-Humanoid-Robotics-Book/Physical-AI-Humanoid-Robotics-Book',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },

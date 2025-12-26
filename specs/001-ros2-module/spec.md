@@ -160,6 +160,7 @@ As an AI engineer working with humanoid robots, I want to understand URDF basics
 
 ### Measurable Outcomes
 
+
 - **SC-001**: 90% of users can explain how ROS 2 coordinates robot behavior after completing Chapter 1
 - **SC-002**: 85% of users can create a basic ROS 2 node with rclpy after completing Chapter 2
 - **SC-003**: 80% of users can read and interpret a basic humanoid URDF file after completing the module

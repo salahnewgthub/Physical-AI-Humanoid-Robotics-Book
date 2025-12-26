@@ -29,6 +29,7 @@
 ## Decision: Build and Deployment Strategy
 **Rationale**: GitHub Pages is free-tier compliant and integrates well with Docusaurus. It provides good performance and reliability for static documentation sites.
 **Alternatives considered**:
+
 - Netlify (requires additional setup)
 - Vercel (requires additional setup)
 - Self-hosting (more complex maintenance)
@@ -36,11 +37,13 @@
 ## Decision: Documentation Standards
 **Rationale**: Following Docusaurus best practices for technical documentation ensures good SEO, accessibility, and user experience. Using Docusaurus-compatible Markdown ensures compatibility with the framework's features.
 **Alternatives considered**:
+
 - Custom Markdown syntax (reduces portability)
 - Different documentation frameworks (would require different skills)
 
 ## Decision: Code Example Approach
 **Rationale**: Minimal illustrative code examples only, as specified in the requirements, keeps the focus on concepts rather than implementation details. This supports the target audience of AI engineers who need to understand ROS 2 concepts.
 **Alternatives considered**:
+
 - Full code examples (violates constraint of minimal code)
 - No code examples (insufficient for technical understanding)

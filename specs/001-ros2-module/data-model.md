@@ -66,6 +66,7 @@
 - All content must be Docusaurus-compatible Markdown
 
 ### Structural Requirements
+
 - Each module must have at least one chapter
 - Chapter titles must be unique within a module
 - Content must follow the specified format constraints

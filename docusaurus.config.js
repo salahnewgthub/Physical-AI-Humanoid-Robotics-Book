@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://physical-ai-humanoid-robotics-book-bv071duft.vercel.app/docs/intro',
+  url: 'https://physical-ai-humanoid-robotics-book-bv071duft.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -70,7 +70,22 @@ const config = {
             label: 'Book',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'dropdown',
+            label: 'Modules',
+            position: 'left',
+            items: [
+              {
+                label: 'Module 1: ROS 2',
+                to: '/docs/module-1/chapter-1-ros2-foundations',
+              },
+              {
+                label: 'Module 2: Digital Twin',
+                to: '/docs/modules/digital-twin/',
+              },
+            ],
+          },
+          {
+            href: 'https://github.com/Physical-AI-Humanoid-Robotics-Book/Physical-AI-Humanoid-Robotics-Book',
             label: 'GitHub',
             position: 'right',
           },
@@ -80,24 +95,32 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Book',
+                label: 'Introduction',
                 to: '/docs/intro',
+              },
+              {
+                label: 'ROS 2 Foundations',
+                to: '/docs/module-1/chapter-1-ros2-foundations',
+              },
+              {
+                label: 'Digital Twin Simulation',
+                to: '/docs/modules/digital-twin/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Modules',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Module 1: Robotic Nervous System',
+                to: '/docs/module-1/chapter-1-ros2-foundations',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Module 2: Digital Twin',
+                to: '/docs/modules/digital-twin/',
               },
             ],
           },
@@ -106,7 +129,11 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Physical-AI-Humanoid-Robotics-Book/Physical-AI-Humanoid-Robotics-Book',
+              },
+              {
+                label: 'Report Issues',
+                href: 'https://github.com/Physical-AI-Humanoid-Robotics-Book/Physical-AI-Humanoid-Robotics-Book/issues',
               },
             ],
           },

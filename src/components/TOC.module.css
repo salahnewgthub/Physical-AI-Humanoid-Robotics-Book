@@ -1,0 +1,50 @@
+.tocContainer {
+  padding: 1.5rem;
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] .tocContainer {
+  background-color: var(--ifm-color-emphasis-800);
+}
+
+.tocHeading {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.toc {
+  font-size: 0.9rem;
+}
+
+.tocItem {
+  transition: all 0.2s ease;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--ifm-button-border-radius);
+  margin: 0.125rem 0;
+}
+
+.tocItem:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  transform: translateX(4px);
+}
+
+[data-theme='dark'] .tocItem:hover {
+  background-color: var(--ifm-color-emphasis-700);
+}
+
+.tocChild {
+  margin-left: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  .tocContainer {
+    margin: 1.5rem 0;
+    border-left: 3px solid var(--ifm-color-primary);
+    border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+  }
+}

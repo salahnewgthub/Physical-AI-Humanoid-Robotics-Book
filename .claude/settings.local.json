@@ -34,7 +34,10 @@
       "Bash(markdownlint specs/002-digital-twin/quickstart.md)",
       "Bash(markdownlint specs/002-digital-twin/research.md)",
       "Bash(markdownlint specs/002-digital-twin/spec.md)",
-      "Bash(markdownlint specs/002-digital-twin/tasks.md)"
+      "Bash(markdownlint specs/002-digital-twin/tasks.md)",
+      "Skill(sp.implement)",
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)",
+      "Bash(git rev-parse --git-dir)"
     ]
   }
 }
